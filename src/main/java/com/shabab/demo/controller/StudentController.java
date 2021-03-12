@@ -17,7 +17,7 @@ public class StudentController {
 
     @PostMapping("/")
     public Student createStudent(@RequestBody Student student){
-        log.info("Inside Controller-CreateStudent");
+        log.info("Controller log");
         Student savedStudent=studentService.saveStudent(student);
         log.info("Saved student with id- {}",savedStudent.getSid());
         return savedStudent;
