@@ -20,6 +20,9 @@ public class StudentController {
         log.info("Controller log");
         log.info("Log 3 ");
         log.info("Log 2");
+        log.info("Branch-feature-test1");
+        log.info("Log2: Branch-feature-test1");
+
         Student savedStudent=studentService.saveStudent(student);
         log.info("Saved student with id- {}",savedStudent.getSid());
         return savedStudent;
